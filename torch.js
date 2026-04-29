@@ -83,6 +83,7 @@ module.exports = {
       "when": "{{platform === 'linux' && gpu === 'nvidia' && kernel.gpu_model && / (10|16)\\d+/.test(kernel.gpu_model)}}",
       "method": "shell.run",
       "params": {
+        "bluefairy": "off",
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
@@ -97,6 +98,7 @@ module.exports = {
       "when": "{{platform === 'linux' && gpu === 'nvidia' && kernel.gpu_model && / 20.+/.test(kernel.gpu_model)}}",
       "method": "shell.run",
       "params": {
+        "bluefairy": "off",
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
@@ -113,6 +115,7 @@ module.exports = {
       "when": "{{platform === 'linux'}}",
       "method": "shell.run",
       "params": {
+        "bluefairy": "off",
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
@@ -132,6 +135,7 @@ module.exports = {
       "when": "{{platform === 'linux'}}",
       "method": "shell.run",
       "params": {
+        "bluefairy": "off",
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
